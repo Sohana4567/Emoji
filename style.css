@@ -1,0 +1,18 @@
+
+.emojiProduct{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+   left:40%;
+}
+
+.animatedemoji{
+    position:relative;
+    animation-name: emojianimation;
+    animation-duration: 2s;
+}
+
+@keyframes  emojianimation{
+    from { transform : translateY(40%) }
+    to   { transform : translateY(0%) }
+}

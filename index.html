@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script> 
+      const arritem = [];
+    const emojis = ["😆",
+        "😅",
+        "🤣",
+        "😂",
+        "😀",
+        "🤑",
+        "🤨",
+        "🙂",
+        "😊",
+        "😗",
+        "😛",
+        "😏",
+        "🤥",
+        "😴",
+        "🥺",
+        "😧",
+        "😇",
+        "😳",
+        "🙃",
+        "🥴",
+        "🧐",
+        "🤨",
+        "😒",
+        "🤔",
+        "🤭",
+        "🥰",
+        "🤐",
+        "👀",
+        "🤔",
+        "🤪",
+        "🥲",
+        "😃",
+        "😁",
+        "😬"];
+      </script>
+</head>
+<body>
+    <div class="emojiProduct">
+    <div class="emojiOperation">
+        <div class="addingEmoji">
+            <h1>Add Item</h1>
+            <button class="push" onclick ="pushfunction(emojis,arritem)">push</button>
+            <button class="unshift" onclick="unshiftfunction(emojis,arritem)">unshift</button>
+        
+            <button class="insertat"  onclick="insertfunction(emojis,arritem)">insert at</button>
+            <input type="number" id="quantityadd" name="quantity" min="1" max="5">
+        </div>
+        <div class="removingEmoji">
+            <h1>Remove Item</h1>
+            <button class="pop" onclick ="popfunction(emojis,arritem)">pop</button>
+            <button class="shift" onclick ="shiftfunction(emojis,arritem)">shift</button>
+            <button class="removeat"  onclick="removefunction(arritem)">Remove at</button>
+            <input type="number" id="quantityremove" name="quantity" min="1" max="5">
+        </div>
+    </div>
+    <div class="emojiDisplay">
+      <p class="emoji"></p>
+    </div>
+   
+</div>
+
+  <script src="./script.js">
+  </script>
+</body>
+</html>
